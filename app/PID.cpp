@@ -4,8 +4,8 @@
 #include "PID.h"
 
 PID::PID(const double &Kp, const double &Ki, const double &Kd) {
-  if (Kp < 0 || Ki < 0 || Kd < 0)
-    throw std::domain_error("Kp,Ki,Kd Cannot be Negative");
+  // if (Kp < 0 || Ki < 0 || Kd < 0)
+  //   throw std::domain_error("Kp,Ki,Kd Cannot be Negative");
   _Kp = Kp;
   _Ki = Ki;
   _Kd = Kd;
