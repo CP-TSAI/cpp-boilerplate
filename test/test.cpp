@@ -2,7 +2,6 @@
 #include "PID.h"
 
 TEST(Compute, should_pass) {
-  // EXPECT_EQ(1, 1);
 	PID controller = PID(1, 0, 0);
 	EXPECT_EQ(3, controller.Compute(4,1));
 }

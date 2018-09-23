@@ -5,8 +5,9 @@
 *  Define the PID controller with kp/ki/kd gain
 *  Compute the velocity value according to "setpoint" and "current velocity" 
 * 
-* @author:
-* @copyright:
+* @author: Chin-Po Tsai
+* @copyright: [2017] <Chin-Po Tsai>  [legal/copyright]
+
 */
 
 #ifndef INCLUDE_PID_H_
@@ -14,36 +15,66 @@
 
 
 /**
-* @brief PID class interface
-* @param _Kp, _Ki, _Kd The gain values of PID controller
-* @param constructor, destructor Initialization and memory control
-* @param Compute() return the new velocity according to input param
+* @brief PID class to implement a PID controller
+* @param none
 */
 class PID {
-private:
-	double _Kp;
-	double _Ki;
-	double _Kd;
+ private:
+    double _Kp;
+    double _Ki;
+    double _Kd;
 
-public:
-	/* constructor*/
-	PID(const double &Kp, const double &Ki, const double &Kd);
-	
-	PID();
-	/* destructor */
-	~PID();
+ public:
+/**
+* @brief default constructor to initialize default values for Kp, Kd, Ki
+* @param none
+* @return none
+*/
+    PID(const double &Kp, const double &Ki, const double &Kd);
 
-	double getKp(void);
+/**
+* @brief constructor to initialize Kp, Kd, Ki with the given values
+* @param Kp, Kd, Ki
+* @return none
+*/	
+    PID();
+    /* destructor */
+    ~PID();
 
-	double getKi(void);
+/**
+* @brief returns the value of Kp
+* @param none
+* @return returns a double value of Kp
+*/	
+    double getKp(void);
 
-	double getKd(void);
+/**
+* @brief returns the value of Ki
+* @param none
+* @return returns a double value of Ki
+*/
+    double getKi(void);
 
-	/* set p/i/d gain */
-	void setConstants(const double &Kp, const double &Ki, const double &Kd);
+/**
+* @brief returns the value of Kd
+* @param none
+* @return returns a double value of Kd
+*/
+    double getKd(void);
 
-	double Compute(const double &Set_Point, const double &Current_Velocity);
+/**
+* @brief sets the value for the constants Kp, Kd, Ki
+* @param Kp, Ki, Kd
+* @return none
+*/
+    void setConstants(const double &Kp, const double &Ki, const double &Kd);
 
+/**
+* @brief compute the required velocity for the given setpoint and actual velocity
+* @param setpoint, currentVelocity
+* @return required velocity
+*/
+    double Compute(const double &setPoint, const double &currentVelocity);
 };
 
-#endif
+#endif  // INCLUDE_PID_H_
