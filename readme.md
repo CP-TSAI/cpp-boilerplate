@@ -9,6 +9,12 @@
 - Navigator: Rajendramayavan
 
 
+## To do list
+- Figure out how to use travis, coveralls
+- PID definition
+- meet on 9/24 for part B 
+
+
 ## Overview
 
 Simple starter C++ project with:
