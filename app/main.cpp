@@ -7,7 +7,12 @@ int main() {
   const double Kp = 1.1;
   const double Ki = 0.5;
   const double Kd = 0.05;
-  PID Controller = PID(Kp, Ki, Kd);
+
+  // PID Controller = PID(Kp, Ki, Kd);
+
+  PID Controller;
+  Controller.setConstants(1.1, 0.5, 0.05);
+
 
   const double Set_Point = 200;
   const double Current_Velocity = 20;

@@ -5,8 +5,8 @@
 ---
 
 ## Author
-- Driver: Rajendramayavan
-- Navigator: Chin-Po Tsai
+- Driver: Chin-Po Tsai
+- Navigator: Rajendramayavan
 
 
 ## Overview

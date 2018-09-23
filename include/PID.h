@@ -29,10 +29,19 @@ public:
 	/* constructor*/
 	PID(const double &Kp, const double &Ki, const double &Kd);
 	
+	PID();
 	/* destructor */
 	~PID();
-	
-	
+
+	double getKp(void);
+
+	double getKi(void);
+
+	double getKd(void);
+
+	/* set p/i/d gain */
+	void setConstants(const double &Kp, const double &Ki, const double &Kd);
+
 	double Compute(const double &Set_Point, const double &Current_Velocity);
 
 };
