@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/CP-TSAI/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/CP-TSAI/cpp-boilerplate)
 
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+<!-- [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master) -->
+
+[![Coverage Status](https://coveralls.io/repos/github/CP-TSAI/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CP-TSAI/cpp-boilerplate?branch=master)
 ---
 
 ## Overview
