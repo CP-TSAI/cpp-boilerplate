@@ -10,12 +10,14 @@
 
 
 ## To do list
-- Figure out how to use travis, coveralls
-- PID definition
-- meet on 9/24 for part B 
-- send a Pull Request to pair B
-- check the Pull Request from pair B
-- cppcheck, cpplint, google test
+- [x] Meet on 9/24 for part B 
+- [ ] Figure out how to use travis, coveralls
+- [ ] send a Pull Request to pair B
+- [ ] check the Pull Request from pair B
+- [ ] cppcheck, cpplint, google test
+- [ ] PID definition
+
+
 
 
 ## Overview
