@@ -10,7 +10,7 @@ Part 1:
 - Navigator: Rajendramayavan
 
 Part 2:
-- Driver: Nithish Kumar Sanjeev Kumar
+- Driver: Nithish Sanjeev Kumar
 - Navigator: Akash Atharv
 
 
