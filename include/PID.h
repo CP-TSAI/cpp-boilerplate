@@ -6,7 +6,7 @@
 *  Compute the velocity value according to "setpoint" and "current velocity" 
 * 
 * @author: Chin-Po Tsai
-* @copyright: [2017] <Chin-Po Tsai>  [legal/copyright]
+* @copyright: [2018] <Chin-Po Tsai>  [legal/copyright]
 
 */
 
