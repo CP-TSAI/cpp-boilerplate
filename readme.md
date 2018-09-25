@@ -1,7 +1,7 @@
 # C++ Boilerplate
 
 [![Build Status](https://travis-ci.org/CP-TSAI/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/CP-TSAI/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/CP-TSAI/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CP-TSAI/cpp-boilerplate?branch=master)
+<a href='https://coveralls.io/github/CP-TSAI/cpp-boilerplate?branch=master'><img src='https://coveralls.io/repos/github/CP-TSAI/cpp-boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
 ---
 
 ## Author
