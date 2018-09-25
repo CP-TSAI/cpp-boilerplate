@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/CP-TSAI/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/CP-TSAI/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CP-TSAI/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CP-TSAI/cpp-boilerplate?branch=master)
-
-
 ---
 
 ## Author
@@ -18,11 +16,10 @@ Part 2:
 
 ## To do list
 - [x] Meet on 9/24 for part B 
-- [ ] Figure out how to use travis, coveralls
-- [ ] send a Pull Request to pair B
-- [ ] check the Pull Request from pair B
+- [x] Figure out how to use travis, coveralls
+- [x] send a Pull Request to pair B
+- [x] check the Pull Request from pair B
 - [ ] cppcheck, cpplint, google test
-- [ ] PID definition
 
 
 
