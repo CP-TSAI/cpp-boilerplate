@@ -86,15 +86,15 @@ class PID {
 * @return required velocity
 */
     double Compute(const double setPoint, const double currentVelocity) {
-        const double Delta = 0.01;
-        double error;
+        const double Delta = 0.01;  /*!< delta_t for differentiation*/
+        double error;                   /*!< Delaring the Error term*/
         double prevError = 0;
-        error = setPoint - currentVelocity;
+        error = setPoint - currentVelocity;   /*!< Error computation*/
         double integral = 0;
-        integral += error;
-
+        integral += error;           /*!< Updation of integral error*/
+         /*!< PID output computation*/
         double v = _Kp*error + _Ki*integral + _Kd*(error - prevError)/Delta;
-        prevError = error;
+        prevError = error;           /*!< Previous error computation*/
         return v;
     }
 };
