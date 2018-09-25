@@ -5,8 +5,13 @@
 ---
 
 ## Author
+Part 1:
 - Driver: Chin-Po Tsai
 - Navigator: Rajendramayavan
+
+Part 2:
+- Driver: Nithish Sanjeev Kumar
+- Navigator: Akash Atharv
 
 
 ## To do list
