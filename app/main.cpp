@@ -1,11 +1,10 @@
-/** @file code.cpp
+/** @file main.cpp
  * 
  * @brief This script makes use of the class PID to get the required
  *        PID value for a target setpoint and velocity
  * 
  * @author Chin-Po Tsai
  * @copyright 2018 ,Chin-Po Tsai All rights reserved
-
 */
 
 #include <iostream>
@@ -17,10 +16,7 @@ int main() {
   const double Kd = 0.05;
 
   PID Controller = PID(Kp, Ki, Kd);
-
-  // PID Controller;
   Controller.setConstants(Kp, Ki, Kd);
-
 
   const double Set_Point = 200;
   const double Current_Velocity = 20;

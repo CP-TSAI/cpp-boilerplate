@@ -6,15 +6,20 @@
  *
 */
 
-
 #include <gtest/gtest.h>
 #include "PID.h"
 
+/**
+ * @brief test for checking whether the "Compute()" function is correct
+ */
 TEST(Compute, should_pass) {
     PID controller = PID(1, 0, 0);
     EXPECT_EQ(3, controller.Compute(4, 1));
 }
 
+/**
+ * @brief test for checking whether the access function to the private variable is correct
+ */
 TEST(setConstants, should_pass) {
     PID controller;
     controller.setConstants(1.1, 0.5, 0.05);
