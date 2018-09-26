@@ -30,73 +30,50 @@ class PID {
 * @param none
 * @return none
 */
-    PID(const double Kp, const double Ki, const double Kd) {
-      setConstants(Kp, Ki, Kd);
-}
-
+    PID(const double& Kp, const double& Ki, const double& Kd);
 /**
 * @brief constructor to initialize Kp, Kd, Ki with the given values
 * @param Kp, Kd, Ki
 * @return none
 */	
-    PID() {}
+    PID();
+    
     /* destructor */
-    ~PID() {}
+    ~PID();
 
 /**
 * @brief returns the value of Kp
 * @param none
 * @return returns a double value of Kp
 */	
-    double getKp(void) {
-        return _Kp;
-    }
+    double getKp(void);
 
 /**
 * @brief returns the value of Ki
 * @param none
 * @return returns a double value of Ki
 */
-    double getKi(void) {
-        return _Ki;
-    }
+    double getKi(void);
 
 /**
 * @brief returns the value of Kd
 * @param none
 * @return returns a double value of Kd
 */
-    double getKd(void) {
-        return _Kd;
-    }
+    double getKd(void);
 
 /**
 * @brief sets the value for the constants Kp, Kd, Ki
 * @param Kp, Ki, Kd
 * @return none
 */
-    void setConstants(const double Kp, const double Ki, const double Kd) {
-        _Kp = Kp;
-        _Kd = Kd;
-        _Ki = Ki;
-    }
+    void setConstants(const double& Kp, const double& Ki, const double& Kd);
 /**
 * @brief compute the required velocity for the given setpoint and actual velocity
 * @param setpoint, currentVelocity
 * @return required velocity
 */
-    double Compute(const double setPoint, const double currentVelocity) {
-        const double Delta = 0.01;  /*!< delta_t for differentiation*/
-        double error;                   /*!< Delaring the Error term*/
-        double prevError = 0;
-        error = setPoint - currentVelocity;   /*!< Error computation*/
-        double integral = 0;
-        integral += error;           /*!< Updation of integral error*/
-         /*!< PID output computation*/
-        double v = _Kp*error + _Ki*integral + _Kd*(error - prevError)/Delta;
-        prevError = error;           /*!< Previous error computation*/
-        return v;
-    }
+    double Compute(const double& setPoint, const double& currentVelocity);
 };
 
 #endif  // CPP_BOILERPLATE__INCLUDE_PID_H_
