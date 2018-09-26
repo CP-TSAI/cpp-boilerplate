@@ -28,7 +28,7 @@ Part 2:
 
 PID Implementation for week 4:
 
-# Install via command-line
+### Install via command-line
 ```
 git clone https://github.com/CP-TSAI/cpp-boilerplate.git
 cd <path to repository>
